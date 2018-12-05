@@ -1,0 +1,131 @@
+101Jul2014     CLG/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CRA/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+119Apr2016        /MRMDUS30    /R/MT564 /142120000026/APURVAFILTER    /000000/000000/USD/31317,50                          Page:   1
+ DAT619263           10300438010SWT15Jul2014196419277       NNUSD000000031317500S/MRMDUS33XXXS/BMUSOMRXXXX      000                 
+{1:F01TESTBIC12XXX0360105154}{2:O5641057130214TESTBIC34XXX26264938281302141757N}{3:{103:CAD}{108:2RDRQDHM3WO}}{4:
+:16R:GENL
+:20C::;CORP//1234567890123456
+:20C::SEME//9876543210987654
+:23G:NEWM
+:22F::CAEV//INTR
+:22F::CAMV//MAND
+:98C::PREP//20220202105733
+:25D::PROC//ENTL
+:16S:GENL
+:16R:USECU
+:35B:ISIN CH0101010101
+/XS/232323232
+FINANCIAL INSTRUMENT ACME
+:16R:FIA
+:22F::MICO//A007
+:16S:FIA
+:16R:ACCTINFO
+:97A::SAFE//99999
+:94F::SAFE//NCSD/TESTBIC0ABC
+:93B::ELIG//FAMT/500000,
+:93B::SETT//FAMT/500000,
+:16S:ACCTINFO
+:16S:USECU
+:16R:CADETL
+:98A::ANOU//20220113
+:98A::RDTE//20220113
+:69A::INPE//20220214/20220214
+:99A::DAAC//360
+:92K::INTR//UKWN
+:22F::ADDB//CAPA
+:16S:CADETL
+:16R:CAOPTN
+:13A::CAON//001
+:22F::CAOP//CASH
+:11A::OPTN//USD
+:17B::DFLT//Y
+:16R:CASHMOVE
+:22H::CRDB//CRED
+:22H::CONT//ACTU
+:97A::CASH//89898
+:19B::ENTL//USD3333,
+:19B::TXFR//USD3333,
+:19B::NETT//USD3333,
+:98A::PAYD//20220214
+:98A::VALU//20220214
+:98A::EARL//20220214
+:92A::INTP//0,75
+:92A::TAXR//0,
+:16S:CASHMOVE
+:16S:CAOPTN
+:16R:ADDINFO
+:70E::ADTX//PAYMENT UPON RECEIPT OF FUNDS - 
+TIMELY PAYMENT EXPECTED
+:16S:ADDINFO
+-}{5:{CHK:C77F8E009597}} 
+2015-11-02-10.55.56     SYS       Test case with MT910 with :: included under tag 50K
+2015-11-02-10.55.56     CBL       MQS Link 631 Received message from Application assigned to CBL using LKD Rule 2012.2006.2027
+ 
+2015-11-02-10.55.56     CBL       Message ACKED to RMI Partner Service GPSAP_IA.
+ 
+2015-11-02-10.55.56     CBL       Message passed to parser queue with priority 0 using default MPR rule.
+ 
+2015-11-02-10.55.56     SYS       Message routed to SWFTXMAPQ using 45422.81151.711171 rule, with priority 0 using default MPR rule
+  and no MPC rule
+ 
+2015-11-02-10.55.56     SYS       Message passed to SWIFT Ready Queue with priority 0 using default MPR rule
+ 
+2015-11-02-10.55.58     SYS       FIN Outbound Msg Sent From LT HSBCHKH0A
+119Apr2016        /MRMDUS30    /R/MT103 /142120000026/APURVAFILTER    /000000/000000/USD/31317,50                          Page:   1
+{1:F01BOFAUSNYJXXX4321000123}{2:I103BANKDEFFAXXXN2020}{3:{103:CAD}}{4:
+:20:NY20040126000111
+:23B:CRED
+:32A:040116USD1000000,00
+:50K:/987654321
+Big Deal Real Estate
+Madison Avenue
+New York, NY USA
+:57A:/654321
+NOSCATTT
+:59:/1234567890123
+I. Buy 
+:Buildings
+200 Front Street
+Toronto, Ontario
+Canada
+:70:re real estate purchase
+10000 King Street East
+Toronto
+:71A:OUR
+-}{5:{CHK:0D9E5A039B00}{TNG:}}{S:{SAC:}{COP:P}}
+2015-11-02-10.55.56     SYS       Test case with MT910 with :: included under tag 50K
+2015-11-02-10.55.56     CBL       MQS Link 631 Received message from Application assigned to CBL using LKD Rule 2012.2006.2027
+119Apr2016        /MRMDUS30    /R/MT110 /142120000026/APURVAFILTER    /000000/000000/USD/31317,50                          Page:   1
+4:
+:20:CHQ293844
+:21:G304987
+:30:020731
+:32B:GBP135,66
+:52A:KREDBEBB100
+:59:PETER BOGAERT
+LEUVEN
+:21:G304988
+:30:020801
+:32B:GBP523,
+:52A:KREDBEBB100
+:59:ANNA SMYTHE
+LEUVEN
+:21:G305766
+:30:020802
+:32B:GBP324,
+:52A:KREDBE88
+:59:GEORGE GRUT
+BRUGGE
+2015-11-02-10.55.56     SYS       Test case with MT910 with :: included under tag 50K
+101Jul2014     CCL/            / /      /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CCO/            / /      /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CDV/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CE1/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CE2/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CG1/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CGB/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CHA/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CIB/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CLD/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CLG/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1
+101Jul2014     CRA/            / /MT    /            /                /000000/000000/   /0.00                              Page:   1

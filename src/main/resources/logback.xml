@@ -1,0 +1,79 @@
+<!-->
+Author Terry Adeagbo
+<-->
+<configuration debug="false"> 
+	<contextName>${HOSTNAME}</contextName>
+	<property scope="context" name="log.prefix" value="gmgmtparser" />
+    <timestamp key="datetime" datePattern="MMdd"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%-5level %d{yyyy-MM-dd HH:mm:ss} %contextName ${user.name} [%thread] [%logger] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--FILE ERROR-->
+    <appender name="ERRORFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--appender name="ERRORFILE" class="ch.qos.logback.core.FileAppender"-->
+        <file>${log.dir}/${log.prefix}.error</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss}|%contextName|${user.name}|%thread|%logger|%line|%msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>       
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>                      
+        </filter>
+        <!--> ADDING ROLLING POLICY <\-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/${log.prefix}_%d{yyyy_MM_dd}.error</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    
+    <!--FILE DEBUG-->
+    <appender name="DEBUGFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--appender name="DEBUGFILE" class="ch.qos.logback.core.FileAppender"-->
+        <file>${log.dir}/${log.prefix}.debug</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss}|%contextName|${user.name}|%thread|%logger|%msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>     
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>     
+        </filter>
+        <!--> ADDING ROLLING POLICY <\-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/${log.prefix}_%d{yyyy_MM_dd}.debug</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+    </appender>
+    
+    <!--NORMAL APPENDER FILE-->
+    <appender name="INFOFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!--appender name="INFOFILE" class="ch.qos.logback.core.FileAppender"-->
+        <!-- path to your log file, where you want to store logs -->
+        <file>${log.dir}/${log.prefix}.info</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss}|%contextName|${user.name}|%thread|%logger|%msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>              
+        </filter>
+        <!--> ADDING ROLLING POLICY <\-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/${log.prefix}_%d{yyyy_MM_dd}.info</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <logger name="main.scala" level="DEBUG"/>
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="INFOFILE" />
+        <appender-ref ref="ERRORFILE" />
+        <appender-ref ref="DEBUGFILE" />
+    </root>
+</configuration>

@@ -1,0 +1,23 @@
+# Terry Adeagbo
+# NOTE: this properties file was created with information obtained from 
+# This black listed country code to exclude from the output.
+AU
+MY
+TW
+VN
+#DE
+LU
+CH
+KP
+KR
+NZ
+CN
+ID
+PL
+TR
+RU
+MT
+AR
+UY
+EG
+SA

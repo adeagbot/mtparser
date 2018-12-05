@@ -1,0 +1,6 @@
+# Terry Adeagbo
+# NOTE: this file was created with information obtained from 
+# This white listed Bic to include in the output.
+
+ELFAFRP1
+CCFRFRCR

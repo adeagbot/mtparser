@@ -1,0 +1,11 @@
+# Terry Adeagbo
+# NOTE: this properties file was created with information obtained from 
+# This white listed message type to include in the output.
+
+MT103
+MT101
+MT110
+MT202
+MT103S
+MT910
+MT564
